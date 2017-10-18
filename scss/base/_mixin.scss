@@ -1,0 +1,67 @@
+// mixin.scss
+
+
+$blue:#043782;
+$white:#fff;
+$skyBlue:#40c2Dd;
+
+
+@mixin border-box(){
+  -webkit-box-sizing:border-box; 
+  -moz-box-sizing:border-box; 
+  -ms-box-sizing:border-box; 
+  -o-box-sizing:border-box; 
+  box-sizing:border-box;
+}
+
+$url:"../img/";
+@mixin background_package($u:$url, $f:none, $s:none, $p:0 0){
+    background-image:url($url+$f);
+    background-repeat:no-repeat; background-size:$s;
+    background-position:$p;
+}
+
+@mixin allSize(){
+  width: 100%;height: 100%;
+}
+
+@mixin h2_size($w:none){
+  width:$w;height:5rem;margin-top:20.625rem;margin-left:5rem; float:left;
+}
+
+@mixin selectBox($c:rgba($blue,0.9)){
+  width: 75rem;height: 37.5rem; background-color:$c; float:right;
+  margin-top:4.0625rem; box-shadow:0.4rem 0.4rem 0.4rem #666;
+}
+
+@mixin h2After(){
+  content:"";display:block;border:0.0625rem solid $blue; margin-top:7.1875rem; width:21.25rem;
+}
+
+@mixin form_set($c:$blue){
+  width: 16.25rem;height: 1.5625rem; margin-left:5rem;
+      >fieldset{width: 100%;height: 100%;
+        >legend{width: 0;height: 0; overflow:hidden;}//legend
+        >input{width: 0;height: 0; position: absolute; z-index: -1000; outline: 0;
+          &:checked + label{
+            color:$c;
+            >i{display:inline-block; color:$c;}}//>i
+          }//input
+        >label{color:$white; font-size:1.2rem;
+          &:first-of-type{margin-right:6.25rem;}//label
+          }//label
+        }//fieldset
+}
+
+@mixin selectBox_li(){
+  width:13.4375rem;height:13.4375rem;float:left; color:$white; border-radius:13.4375rem; background-color:#fff;
+  line-height:13.4375rem; text-align:center; margin-right:1rem;
+}
+
+@mixin clause(){
+  width:545px;height:450px;float:left;
+}
+
+@mixin clause_h3(){
+  width:95px;height:30px;margin-left:220px;font-size:1.5rem;color:$blue;
+}

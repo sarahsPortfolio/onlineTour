@@ -1,0 +1,302 @@
+  /* main.scss (onlineTour) */
+@import "./base/mixin";
+
+#wrap{width:100%; height:100%; min-width:60rem;}//#wrap
+  #headBox{width: 100%;height: 8.125rem; min-width:60rem; position:fixed; z-index:1000;padding:1.875rem 3.125rem 0; @include border-box;
+   >h1{width: 23.75rem;height: 4.375rem; float:left; @include background_package($f:"logo_re.png", $p:center, $s:cover);
+     >a{width:inherit; height:inherit;display:block;}//h1>a
+     }//h1
+   >.unb{width:30rem; height:2.5rem;float:right; margin-top:1.875rem;
+     >.sign{width:17.5rem; height:2.5rem; float:left;
+       >ul{width: 100%; height: 100%; margin-right:2rem;
+         >li{width: 5.625rem; height: 100%;margin-right:0.4rem; float:left; text-align:center; line-height:3.4375rem;
+           &:first-child{width: 5rem;}
+           &:last-child{margin-right:0;}
+          >a{width: 100%;height: 100%;}
+           }//li
+         }//ul
+       }//.unb>.sign
+     >.sns{width:11.875rem;height:2.5rem;float:right;
+       >ul{width:100%;height:100%;
+        >li{width:2.5rem;height:2.5rem;margin-right:0.4rem;float:left; 
+            text-align:center;font-size:2rem;padding-top:0.3125rem; @include border-box;
+          &:last-child{margin-right:0;}
+          }//ul>li
+        }//ul
+       }//.unb>.sns
+     }//.unb
+   >.gnb{width:0; height:0;
+    >.menu_btn{width:2.375rem; height:4.5625rem; @include background_package($f:"main/menu_btn.png",$s:cover);
+               position:fixed; top:50%; margin-top:-2.28125rem; left:0;z-index:700;
+               cursor:pointer; 
+               }//.menu_btn
+    >.big_menu{width:25.625rem; height:100%; background-color:rgba(0,0,0,0.7);transition:all 300ms;
+               position:fixed; left:0; top:0; z-index:600; transform:translateX(-25.625rem);
+               color:$white; padding:2.5rem 1.25rem; @include border-box;
+               &.open{transform:translateX(0);}
+      >.btn{width:auto;height:auto; float:right;
+        >button{width: 100%;height: 100%; color:$white; font-size:2.5rem; margin-bottom:2.8125rem;}
+        }//btn
+      >.big_menu_list{width:100%;height:auto;float:left;
+        >li{width:23.125rem; height:4.375rem; line-height:4.375rem; font-size:3rem;
+            margin-bottom:2.8125rem; text-align:center;}//.big_menu_list>li
+        }//.big_menu_list
+      }//.big_menu
+    >.indigator{width:1.25rem; height:16.25rem; position:fixed; right:1.875rem; top:50%; margin-top:-8.125rem; z-index:600;
+      >li{width:1.25rem; height:1.25rem;margin-bottom:1.25rem; border-radius:0.625rem; overflow:hidden;
+        &:last-child{margin-bottom:0;}
+        &.active>a{background-color:$blue;}
+        >a{width:100%; height:100%; display:block; background-color:$white;
+        &:hover{background-color:$blue;}
+        }//li>a
+        }//.indigator>li
+      }//.indigator
+   }//.gnb
+   }//#headBox
+  #airBox{@include background_package($f:"main/air_back.png", $s:cover);
+    >h2{@include h2_size($w:11.25rem);
+        @include background_package($f:"main/title_hanggong.png", $s:100%);margin-bottom:3.125rem;
+        &:after{@include h2After;}
+        }//h2
+    >form{@include form_set;}//form
+    >.selectBox{@include selectBox($c:rgba($skyBlue,0.8)); padding:50px 120px; @include border-box;
+      >form{width:430px;height:500px;
+        >.way{width:100%;height:30px;position: relative; margin-left:50px;
+          >legend{width:0;height:0;overflow:hidden;}//legend
+          >input{width: 0;height: 0; position: absolute; z-index: -1000; outline: 0;
+            &:checked + label > i:before{background-color: #333;}
+            }//input
+          >label{position:relative; margin-right:80px; margin-left:20px; 
+            >i{width: 20px;height: 20px;position:absolute; top:-3px; left:-40px; border:3px solid #333;
+               border-radius:10px; padding:3px; @include border-box;
+              &:before{content:""; display:block; width: 100%;height: 100%; background-color:transparent;
+                       border-radius:10px;}
+              }//i
+          }//label
+        }//.way(fieldset_1)
+        >.area{width:960px;height: 250px;
+          >.national{width:100%;height:50px; margin-top:25px;
+            >select{width:400px;height:50px;float:left;}
+            >.arrow{width:70px;height:50px; margin:0 45px;float:left; 
+                    @include background_package($f:"main/arrow.png", $s:contain);}
+            }//.national
+          >.schedule{width:100%;height:50px; margin-top:25px;
+            >#calendar{width: 100%;height: 50px;}//#calendar
+            }//.schedule
+          >.airline{width:100%;height:50px; margin:25px 0;
+            >#airport{width:100%;height:50px;}//#airport
+            }//.airline
+          }//.area(fieldset_2)
+        >.personbtn{width:960px;height:220px;margin-top:10px;
+          >.person{width: 460px;height:220px;float:left;
+          >.adult{width:100%;height:50px;
+            >button{width:50px;height:50px;float:left;background-color:$blue; color:$white;
+                    font-size:2rem;}
+            >p{width: 300px;height:50px; margin:0 25px;float:left;
+               font-size:1.4rem;line-height:50px;text-align:center;}
+            }//.adult
+          >.children{widows: 100%;height:50px;margin:25px 0 25px 0;
+            >button{width:50px;height:50px;float:left;background-color:$blue; color:$white;
+                    font-size:2rem;}
+            >p{width: 300px;height:50px; margin:0 25px;float:left;
+               font-size:1.4rem;line-height:50px;text-align:center;}
+            }//.children
+          >.baby{widows: 100%;height:50px;
+            >button{width:50px;height:50px;float:left;background-color:$blue; color:$white;
+                    font-size:2rem;}
+            >p{width: 300px;height:50px; margin:0 25px;float:left;
+               font-size:1.4rem;line-height:50px;text-align:center;}
+              }//.baby
+            }//.person
+          >button{width: 220px;height: 220px;background-color:$blue;color:$white;float:right;
+                  font-size:1.6rem;
+            &:hover{box-shadow:0.3rem 0.3rem 0.3rem #777; transition:all 100ms;}
+            }//button
+        }//.person(fieldset_3)
+      }//form
+      }//.selectBox
+    }//#airBox
+  #hotelBox{@include background_package($f:"main/hotel_back.png", $s:cover);
+    >h2{@include h2_size($w:11.25rem);
+        @include background_package($f:"main/title_hotel.png", $s:100%);margin-bottom:3.125rem;
+        &:after{@include h2After;}
+      }//h2
+      >form{@include form_set;}//form(국내 및 해외 check)
+      >.selectBox{@include selectBox($c:rgba($skyBlue,0.8));padding:90px 120px;@include border-box;
+        >form{width: 100%;height: 100%;
+          >fieldset{width:100%;height:100%;
+            >.find_hotel{width:100%;height:340px;
+              >select{width: 100%;height: 50px;margin-bottom:55px;background-color: #fff; float:left;
+                &.size_1{width:450px;float:left;}//size_1
+                &.size_2{width:450px;margin-right:0; float:right;}//size_2
+                }//select
+              }//.find_hotel(div)
+            >button{width: 100%;height:80px; background-color:$blue; color:$white; font-size:1.6rem;}
+            }//fieldset
+          }//form
+      }//.selectBox
+    }//#hotelBox
+  #overSeasBox{@include background_package($f:"main/overseas_back.png", $s:cover);
+    >h2{@include h2_size($w:21.25rem);
+        @include background_package($f:"main/title_overseas.png", $s:100%);margin-bottom:3.125rem;
+        &:after{@include h2After;}
+        }//h2
+    >form{@include form_set;}//form
+    >.selectBox{@include selectBox($c:rgba($skyBlue,0.8));
+      >ul{width:100%;height:32.1875rem;padding:1.875rem; @include border-box;
+        >li{@include selectBox_li;
+          &:nth-of-type(1){@include background_package($f:"main/overseas_qingdao-shelaton.png",$s:cover, $p:-70px 0);margin-bottom:1.5625rem;
+            &:hover{@include background_package($f:"travel_Overseas/package/qingdao-shelaton.jpg",$s:cover, $p:-70px 0);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+            }//nth-of-type(1)
+          &:nth-of-type(2){@include background_package($f:"main/overseas_waikiki.png",$s:cover);margin-bottom:1.5625rem;
+            &:hover{@include background_package($f:"travel_Overseas/package/waikiki.jpg",$s:cover);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+            }//nth-of-type(2)
+          &:nth-of-type(3){@include background_package($f:"main/overseas_hollywood.png",$s:cover, $p:-40px 0);margin-bottom:1.5625rem;
+            &:hover{@include background_package($f:"travel_Overseas/package/hollywood.jpg",$s:cover, $p:-40px 0);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+          }//nth-of-type(3)
+          &:nth-of-type(4){@include background_package($f:"main/overseas_shatporo.png",$s:cover, $p:-70px 0);margin-bottom:1.5625rem;
+            &:hover{@include background_package($f:"travel_Overseas/package/shatporo.jpg",$s:cover, $p:-70px 0);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+            }//nth-of-type(4)
+          &:nth-of-type(5){@include background_package($f:"main/overseas_paradasegarden.png",$s:cover, $p:-30px 0); margin-right:0;margin-bottom:1.5625rem;
+            &:hover{@include background_package($f:"travel_Overseas/package/paradasegarden.jpg",$s:cover, $p:-30px 0);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+            }//nth-of-type(5)
+          &:nth-of-type(6){@include background_package($f:"main/overseas_henangarden.png",$s:cover, $p:-40px 0);
+            &:hover{@include background_package($f:"travel_Overseas/package/henangarden.jpg",$s:cover, $p:-40px 0);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+            }//nth-of-type(6)
+          &:nth-of-type(7){@include background_package($f:"main/overseas_macau.png",$s:cover, $p:-90px 0);
+            &:hover{@include background_package($f:"travel_Overseas/package/macau.jpg",$s:cover, $p:-90px 0);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+            }//nth-of-type(7)
+          &:nth-of-type(8){@include background_package($f:"main/overseas_hongkong.png",$s:cover);
+            &:hover{@include background_package($f:"travel_Overseas/package/hongkong.jpg",$s:cover);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+            }//nth-of-type(8)
+          &:nth-of-type(9){@include background_package($f:"main/overseas_oceanpark.png",$s:cover);
+            &:hover{@include background_package($f:"travel_Overseas/package/oceanpark.jpg",$s:cover);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+            }//nth-of-type(9)
+          &:nth-of-type(10){@include background_package($f:"main/overseas_qingdao.png",$s:cover, $p:-60px 0); margin-right:0;
+            &:hover{@include background_package($f:"travel_Overseas/package/qingdao.jpg",$s:cover, $p:-60px 0);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+            }//nth-of-type(10)
+          }//li
+        }//ul
+      >.more{width:15rem;height:3.75rem; margin-left:30rem; transition:all 300ms;
+        >a{width: 100%;height: 100%; display:block; color:$white;background-color:$blue; 
+           text-align:center; line-height:3.75rem; font-size:1.3rem;}//a
+        &:hover{box-shadow:0.3rem 0.3rem 0.3rem rgba(#777, 0.8);}
+        }//.more
+      }//.selectBox
+    }//#overSeasBox
+  #domesticBox{@include background_package($f:"main/domestic_back.png", $s:cover);
+    >h2{@include h2_size($w:21.25rem);
+        @include background_package($f:"main/title_domestic.png", $s:100%);
+        margin-bottom:3.125rem;
+      &:after{@include h2After;}
+      }//h2
+    >form{@include form_set($c:$skyBlue);}//form
+    >.selectBox{@include selectBox($c:rgba($skyBlue,0.8));
+      >ul{width:100%;height:32.1875rem;padding:1.875rem; @include border-box;
+        >li{@include selectBox_li;
+          &:nth-of-type(1){@include background_package($f:"main/domestic_osulloc.png",$s:cover);margin-bottom:1.5625rem;
+            &:hover{@include background_package($f:"travel_korea/package/osulloc.jpg",$s:cover);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+            }//nth-of-type(1)끝
+          &:nth-of-type(2){@include background_package($f:"main/domestic_hongdo_3day.png",$s:cover);margin-bottom:1.5625rem;
+            &:hover{@include background_package($f:"travel_korea/package/hongdo_3day.jpg",$s:cover);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+            }//nth-of-type(2)끝
+          &:nth-of-type(3){@include background_package($f:"main/domestic_hongdo_2day.png",$s:cover);margin-bottom:1.5625rem;
+            &:hover{@include background_package($f:"travel_korea/package/honddo_2day.jpg",$s:cover);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+            }//nth-of-type(3)끝
+          &:nth-of-type(4){@include background_package($f:"main/domestic_haebeach.png",$s:cover);margin-bottom:1.5625rem;
+            &:hover{@include background_package($f:"travel_korea/package/haebeach.jpg",$s:cover);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+            }//nth-of-type(4)끝
+          &:nth-of-type(5){@include background_package($f:"main/domestic_ulungdo.png",$s:cover); margin-right:0;margin-bottom:1.5625rem;
+            &:hover{@include background_package($f:"travel_korea/package/ulungdo.jpg",$s:cover);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+          }//nth-of-type(5)끝
+          &:nth-of-type(6){@include background_package($f:"main/domestic_sukjo.png",$s:cover);
+            &:hover{@include background_package($f:"travel_korea/package/sukjo.jpg",$s:cover);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+          }//nth-of-type(6)끝
+          &:nth-of-type(7){@include background_package($f:"main/domestic_silsok.png",$s:cover);
+            &:hover{@include background_package($f:"travel_korea/package/silsok.jpg",$s:cover);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+          }//nth-of-type(7)끝
+          &:nth-of-type(8){@include background_package($f:"main/domestic_romantichelling.png",$s:cover);
+            &:hover{@include background_package($f:"travel_korea/package/romantichelling.jpg",$s:cover);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+          }//nth-of-type(8)끝
+          &:nth-of-type(9){@include background_package($f:"main/domestic_dokdo_2.png",$s:cover);
+            &:hover{@include background_package($f:"travel_korea/package/dokdo_2.jpg",$s:cover);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+          }//nth-of-type(9)끝
+          &:nth-of-type(10){@include background_package($f:"main/domestic_ulngdo.png",$s:cover); margin-right:0;
+            &:hover{@include background_package($f:"travel_korea/package/ulngdo.jpg",$s:cover);margin-bottom:1.5625rem;
+                    transition:all 300ms ease-out; color:transparent;}
+          }//nth-of-type(10)끝
+          }//li
+        }//ul
+      >.more{width:15rem;height:3.75rem; margin-left:30rem; transition:all 300ms;
+        >a{width: 100%;height: 100%; display:block; color:$white;background-color:$blue; 
+           text-align:center; line-height:3.75rem; font-size:1.3rem;}//a
+           &:hover{box-shadow:0.3rem 0.3rem 0.3rem rgba(#777, 0.8);}
+        }//.more
+      }//.selectBox
+    }//#domesticBox
+  #temaBox{@include background_package($f:"main/tema_back.png", $s:cover);
+    >h2{@include h2_size($w:21.25rem);
+        @include background_package($f:"main/title_tema.png", $s:100%);}//h2
+    >.selectBox{@include selectBox;
+      >ul{width: 100%;height: 100%;padding:3.6875rem 13.125rem;@include border-box;
+        >li{width: 50%;height: 3.125rem; margin-bottom:3.625rem; color:$white;
+            line-height: 3.125rem; font-size:3rem; float:left;
+          &:nth-child(5n){margin-bottom:0;}
+          &:nth-child(2n){padding-left:1.25rem; @include border-box;}
+          }//li
+        }//ul
+      }//.selectBox
+    }//#temaBox
+  #serviceBox{@include background_package($f:"main/service_back.png", $s:cover);
+    >h2{@include h2_size($w:18.125rem);
+        @include background_package($f:"main/title_service.png", $s:100%);}//h2
+    >.selectBox{@include selectBox;
+      >ul{width: 100%;height: 100%;padding:3.6875rem 26.25rem; @include border-box;
+        >li{width: 20rem;height:3.125rem;color:$white;text-align:center;font-size:3rem;
+            line-height:3.125rem; margin-bottom:3.625rem;
+          &:last-child{margin-bottom:0;}
+          }//li
+        }//ul
+      }//.selectBox
+    }//#serviceBox
+  #eventBox{@include background_package($f:"main/event_back.png", $s:cover, $p:center); position:relative;
+    >h2{@include h2_size($w:14.375rem);
+        @include background_package($f:"main/title_event.png", $s:100%);}//h2
+    >.eventBtn{width:25rem; height:9.375rem;background-color: rgba($blue,0.9); margin-right:6.25rem;
+            box-shadow:0.3rem 0.3rem 0.3rem #666; float:right; margin-top:20.625rem;
+            border-radius:0.7rem;
+      >a{width:100%;height:100%;color:$white;font-size:2rem; display:block;
+         line-height:3.125rem; text-align:center; padding-top:1.5625rem;@include border-box;}
+      }//.eventBtn
+    >.copyright{width:31.25rem;height:1.875rem;float:left;text-align:center; margin-left:40.625rem;
+                position: absolute; bottom:0;}//.copyright
+    }//#eventBox
+  
+
+
+
+
+//+-+-+-+-+-+-+-+-+-+  공통   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+//
+   .view_box{@include allSize; padding:8.125rem 4.375rem 0 4.375rem; @include border-box;}
+   .active>a{background-color:$blue;}
+
+

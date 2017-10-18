@@ -1,0 +1,108 @@
+  /* main.scss (onlineTour) */
+@import "./base/mixin";
+
+#wrap{width:100%; height:90%; min-width:60rem;}//#wrap
+  #headBox{width: 100%;height: 8.125rem; min-width:60rem; position:fixed; z-index:1000;padding:1.875rem 3.125rem 0; @include border-box;
+   >h1{width: 23.75rem;height: 4.375rem; float:left; @include background_package($f:"logo_re.png", $p:center, $s:cover);
+     >a{width:inherit; height:inherit;display:block;}//h1>a
+     }//h1
+   >.unb{width:30rem; height:2.5rem;float:right; margin-top:1.875rem;
+     >.sign{width:17.5rem; height:2.5rem; float:left;
+       >ul{width: 100%; height: 100%; margin-right:2rem;
+         >li{width: 5.625rem; height: 100%;margin-right:0.4rem; float:left; text-align:center; line-height:3.4375rem;
+           &:first-child{width: 5rem;}
+           &:last-child{margin-right:0;}
+          >a{width: 100%;height: 100%;}
+           }//li
+         }//ul
+       }//.unb>.sign
+     >.sns{width:11.875rem;height:2.5rem;float:right;
+       >ul{width:100%;height:100%;
+        >li{width:2.5rem;height:2.5rem;margin-right:0.4rem;float:left; 
+            text-align:center;font-size:2rem;padding-top:0.3125rem; @include border-box;
+          &:last-child{margin-right:0;}
+          }//ul>li
+        }//ul
+       }//.unb>.sns
+     }//.unb
+   >.gnb{width:0; height:0;
+    >.menu_btn{width:2.375rem; height:4.5625rem; @include background_package($f:"main/menu_btn.png",$s:cover);
+               position:fixed; top:50%; margin-top:-2.28125rem; left:0;z-index:700;
+               cursor:pointer; 
+               }//.menu_btn
+    >.big_menu{width:25.625rem; height:100%; background-color:rgba(0,0,0,0.7);transition:all 300ms;
+               position:fixed; left:0; top:0; z-index:600; transform:translateX(-25.625rem);
+               color:$white; padding:2.5rem 1.25rem; @include border-box;
+               &.open{transform:translateX(0);}
+      >.btn{width:auto;height:auto; float:right;
+        >button{width: 100%;height: 100%; color:$white; font-size:2.5rem; margin-bottom:2.8125rem;}
+        }//btn
+      >.big_menu_list{width:100%;height:auto;float:left;
+        >li{width:23.125rem; height:4.375rem; line-height:4.375rem; font-size:3rem;
+            margin-bottom:2.8125rem; text-align:center;}//.big_menu_list>li
+        }//.big_menu_list
+      }//.big_menu
+   }//.gnb
+   }//#headBox
+
+  #sign_up{width:100%; height:100%;@include background_package($f:"signup/background.png", $s:cover);
+    >h2{@include h2_size($w:21.25rem);
+        @include background_package($f:"signup/title.png", $s:100%);margin-bottom:3.125rem;
+        &:after{width: 300px;height: 60px;content:"";display:block;margin-top:7.1875rem; margin-left:15px;
+                @include background_package($f:"signup/sequence_1.png", $s:contain);}//after
+        }//h2
+    >form{@include selectBox($c:rgba($skyBlue,0.8)); padding:30px 35px; @include border-box;
+      >fieldset{width:34.0625rem;height:470px;margin-right:40px;float:left;
+        &:last-of-type{margin-right:0;}
+        >legend{width: 110px;height: 30px;font-size:1.5rem;margin-left:217px;text-align:center; margin-bottom:5px;}//legend
+        >.terms{width: 100%;height: 415px;background-color:$white;padding:5px; @include border-box;float:left;margin-bottom:5px;
+          >p{width: 100%;height: 100%;overflow-y:scroll;}
+          }//terms
+          >input{width:0;height:0; position: absolute; z-index:-1000; outline:0;
+                &:checked + label > i{color: $blue;}
+                }//input
+          >label{margin-right:80px; margin-left:20px;
+                >i{width:20px;height:20px;@include border-box; color:$white;}
+              }//label
+        }//fieldset
+      >button{width:140px;height:50px;margin-top:15px;background-color:$blue;color:$white;font-size:1.5rem;float:right;
+        &:hover{box-shadow:0.3rem 0.3rem 0.3rem #777; transition:all 100ms;}
+        }//button
+      }//form
+    }//#sing_up
+
+  #footBox{width:100%;height: 155px; background-color:#333; padding:0 10px;
+          @include border-box; color:$white;
+   >.familybtn{width:100%;height:45px;border-bottom:1px solid $white; padding:8px 0;
+          @include border-box;
+     >li{width:310px;height:100%;float:left;border-left:1px solid $white; line-height:29px;
+         text-align:center;
+       &:first-child{border-left:none;}
+       >a{width: 100%;height: 100%;}//li>a
+       }//li
+     }//.familybtn
+   >.info{width:920px;height:110px;float:left; margin-left:80px;
+     >p{width: 100%;height: 70px;margin-top:20px;}
+     }//.info
+   >.tel{width:300px; height:110px;float:right; margin-right:80px;
+     >dl{width: 100%;height: 100%;
+     >dt{line-height:50px;}
+     >dd{font-size:2.5rem;}
+       }//dl
+     }//.tel
+   }//#footBox
+  
+
+
+//+-+-+-+-+-+-+-+-+-+  공통   +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+//
+   .view_box{@include allSize; padding:8.125rem 4.375rem 0 4.375rem; @include border-box;}
+
+
+
+
+
+
+
+
+
+
