@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <!--[if lte IE 9]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie7/IE9.js"></script>
+    <script src="../ie/css3pie/PIE_IE9.js"></script>
+    <![endif-->
+  
+    <link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/jejugothic.css" />
+    <link rel="stylesheet" href="../fontAwesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/base/reset.css" />
+    <link rel="stylesheet" href="../css/base/normalize.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  
+    <script src="../js/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../js/jquery/jquery-ui.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon_img.png">
+    <link rel="apple-touch-icon" href="../img/favicon_img.png">
+  <title>여행의 즐거움, 온라인투어</title>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox">
+      <h1>
+        <a href="./main.html">
+          <span class="hidden">여행의 즐거움! 온라인투어</span>
+        </a>
+      </h1>
+      <nav class="unb">
+        <div class="sign">
+          <ul>
+            <li><a href="./login.html">로그인</a></li>
+            <li><a href="./signup_1.html">회원가입</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+        <div class="sns">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/onlinetour.co.kr/?ref=ts&fref=ts"><i class="fa fa-facebook" aria-hidden="true"></i><span class="hidden">페이스북 페이지로 이동</span></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/No1onlinetour"><i class="fa fa-twitter" aria-hidden="true"></i><span class="hidden">트위터 페이지로 이동</span></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/onlinetour_no.1/"><i class="fa fa-instagram" aria-hidden="true"></i><span class="hidden">인스타그램 페이지로 이동</span></a>
+            </li>
+            <li>
+              <a href="http://online_tour.blog.me/"><i class="fa fa-bold" aria-hidden="true"></i><span class="hidden">블로그 페이지로 이동</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <nav class="gnb">
+        <div class=menu_btn>
+          <button type="button"></button>
+        </div>
+        <div class="big_menu">
+          <div class="btn">
+            <button type="button"><i class="fa fa-times" aria-hidden="true"></i></button>
+          </div>
+          <ul class="big_menu_list">
+            <li><a href="#">항공</a></li>
+            <li><a href="#">호텔</a></li>
+            <li><a href="#">해외여행</a></li>
+            <li><a href="#">국내여행</a></li>
+            <li><a href="./tema_honeymoon.html">테마여행</a></li>
+            <li><a href="#">SERVICE</a></li>
+            <li><a href="#">EVENT</a></li>
+          </ul>
+        </div>
+        <ul class="indigator">
+          <li class="active"><a href="#"><span class="hidden">airBox로이동</span></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="view_box" id="airBox">
+      <h2><span class="hidden">항공</span></h2>
+      <form action="#" method="get">
+        <fieldset>
+          <legend></legend>
+          <input type="radio" id="air_overs" name="air" value="overs">
+          <label for="air_overs">
+            <i class="fa fa-check" aria-hidden="true"></i><span>해외</span>
+          </label>
+          <input type="radio" id="air_domes" name="air" value="domes">
+          <label for="air_domes">
+            <i class="fa fa-check" aria-hidden="true"></i><span>국내</span>
+          </label>
+        </fieldset>
+      </form>
+      <div class="selectBox">
+        <form action="#" method="get">
+          <fieldset class="way">
+            <legend class="hidden">왕복, 편도 다구간 선택하여 보기</legend>
+            <input type="radio" id="round" name="overseas_airway" value="overs_round">
+            <label for="round">
+              <i class="dot"></i><span>왕복</span>
+            </label>
+            <input type="radio" id="oneWay" name="overseas_airway" value="overs_oneWay">
+            <label for="oneWay">
+              <i class="dot"></i><span>편도</span>
+            </label>
+            <input type="radio" id="multiWay" name="overseas_airway" value="overs_multiWay">
+            <label for="multiWay">
+              <i class="dot"></i><span>다구간</span>
+            </label>
+          </fieldset>
+          <fieldset class="area">
+            <legend class="hidden">여행구간 선택하여 보기</legend>
+            <div class="national"><!--지역 선택영역-->
+              <select name="departed" id="departed">
+                <option value="icn">서울/인천(icn)</option>
+                <option value="gmp">김포(gmp)</option>
+                <option value="pus">부산</option>
+                <option value="tae">대구</option>
+                <option value="cjj">청주</option>
+                <option value="cju">제주</option>
+                <option value="mwx">무안</option>
+                <option value="kwj">광주</option>
+                <option value="usn">울산</option>
+                <option value="rsu">여수</option>
+              </select>
+              <div class="arrow"></div>
+              <select name="arrived" id="arrived">
+                <option value="pek">북경</option>
+                <option value="pvg">상해/푸동</option>
+                <option value="">중국</option>
+              </select>
+            </div><!--지역 선택영역-->
+            <div class="schedule"><!--일정 선택 영역-->
+              <select name="calendar" id="calendar">
+                <option value="agu">8월</option>
+              </select>
+            </div><!--일정 선택 영역-->
+            <div class="airline"><!--항공사 선택 영역-->
+              <select name="airport" id="airport"><!--3개 묶음-->
+                <option value="all">모든항공사</option>
+                <option value="asiana">아시아나</option>
+                <option value="daehan">대한항공</option>
+                <option value="garuda">가루다항공</option>
+                <option value="delta">델타항공</option>
+                <option value="rao">라오항공</option>
+                <option value="ran">란항공</option>
+                <option value="russia">러시아항공</option>
+                <option value="rufth">루프트한자</option>
+                <option value="madaca">마다가스카르</option>
+                <option value="mallayi">말레이시아</option>
+                <option value="mexico">멕시코항공</option>
+                <option value="burgin">버진아틀란틱</option>
+                <option value="vietnam">베트남항공</option>
+                <option value="vieget">비엣젯항공</option>
+                <option value="sichuan">사천항공</option>
+                <option value="srirang">스리랑칸항공</option>
+                <option value="scut">스쿠트타이거항공</option>
+                <option value="siveri">시베리아항공</option>
+                <option value="xinjiapo">싱가포르항공</option>
+                <option value="ameri">아메리칸항공</option>
+                <option value="alli">알리탈리아</option>
+                <option value="emi">에미레이트</option>
+                <option value="eva">에바항공</option>
+                <option value="airnew">에어뉴질랜드</option>
+                <option value="airmacao">에어마카오</option>
+                <option value="airmori">에어모리셔스</option>
+                <option value="airbusan">에어부산</option>
+                <option value="airseoul">에어서울</option>
+                <option value="airasta">에어아스타나</option>
+                <option value="airindia">에어인디아</option>
+                <option value="aircanada">에어캐나다</option>
+                <option value="etio">에티오피아</option>
+                <option value="etide">에티하드항공</option>
+                <option value="lryisla">엘알이스라엘항공</option>
+                <option value="england">영국항공</option>
+                <option value="ostria">오스트리아</option>
+                <option value="uzbek">우즈벡항공</option>
+                <option value="ubited">유나이티드항공</option>
+                <option value="esta">이스타항공</option>
+                <option value="japan">일본항공</option>
+              </select>
+            </div><!--항공사 선택 영역-->
+          </fieldset><!--3개 묶음-->
+          <fieldset class="personbtn">
+            <div class="person">
+              <div class="adult">
+                <button type="button">&#45;</button>
+                <p>성인 1명</p>
+                <button type="button">&#43;</button>
+              </div>
+              <div class="children">
+                <button type="button">&#45;</button>
+                <p>소아 1명</p>
+                <button type="button">&#43;</button>
+              </div>
+              <div class="baby">
+                <button type="button">&#45;</button>
+                <p>유아 1명</p>
+                <button type="button">&#43;</button>
+              </div>
+            </div>
+          <button type="button">CLICK!</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <section class="view_box" id="hotelBox">
+      <h2><span class="hidden">호텔</span></h2>
+      <form action="#" method="get">
+        <fieldset>
+          <legend></legend>
+          <input type="radio" id="hotel_overs" name="ho" value="overs">
+          <label for="hotel_overs">
+            <i class="fa fa-check" aria-hidden="true"></i>해외
+          </label>
+          <input type="radio" id="hotel_domes" name="ho" value="domes">
+          <label for="hotel_domes">
+            <i class="fa fa-check" aria-hidden="true"></i>국내
+          </label>
+        </fieldset>
+      </form>
+      <div class="selectBox">
+        <form action="#" method="get">
+          <fieldset>
+            <legend class="hidden">호텔검색영역 입니다.</legend>
+            <div class="find_hotel">
+              <select name="check_city">
+                  <option value="pek">북경</option>
+                  <option value="pvg">상해/푸동</option>
+                  <option value="nagoya">나고야</option>
+                  <option value="bladi">블라디보스톡</option>
+                  <option value="pari">파리</option>
+                  <option value="rundon">런던</option>
+              </select>
+              <select name="check_shedule">
+                  <option value="check_in">체크인</option>
+                  <option value="check_out">체크아웃</option>
+              </select>
+              <select name="count_room" class="size_1">
+                  <option>객실 수</option>
+                  <option value="one">1</option>
+                  <option value="two">2</option>
+                  <option value="three">3</option>
+                  <option value="four">4</option>
+                  <option value="five">5</option>
+                  <option value="six">6</option>
+                  <option value="seven">7</option>
+                  <option value="eight">8</option>
+                  <option value="nine">9</option>
+              </select>
+              <select name="room_type" class="size_2">
+                  <option>객실 타입</option>
+                  <option value="double">double</option>
+                  <option value="single">single</option>
+                  <option value="twin">twin</option>
+              </select>
+            </div>
+            <button type="button">click!</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <section class="view_box" id="overSeasBox">
+      <h2><span class="hidden">해외여행</span></h2>
+      <form action="#" method="get">
+        <fieldset>
+          <legend></legend>
+          <input type="radio" id="over_pack" name="over" value="package">
+          <label for="over_pack">
+            <i class="fa fa-check" aria-hidden="true"></i>패키지
+          </label>
+          <input type="radio" id="over_free" name="over" value="free">
+          <label for="over_free">
+            <i class="fa fa-check" aria-hidden="true"></i>자유
+          </label>
+        </fieldset>
+      </form>
+      <div class="selectBox">
+        <ul>
+          <li>칭다오 쉐라톤 호텔 저렴 4박</li>
+          <li>휴양은 역시 와이키키</li>
+          <li>hollywood에서 우아하게</li>
+          <li>삿뽀로 최저가 2박3일</li>
+          <li>여기가 파라다이스!</li>
+          <li>싱가폴 단독특가 6일</li>
+          <li>마카오의 역사탐험</li>
+          <li>홍콩의 매력에 빠져보자!</li>
+          <li>오션파크</li>
+          <li>청도맥주 맛보러 가자!</li>
+        </ul>
+        <div class="more">
+          <a href="#">&#43; 더보기</a>
+        </div>
+      </div>
+    </section>
+    <section class="view_box" id="domesticBox">
+      <h2><span class="hidden">국내여행</span></h2>
+      <form action="#" method="get">
+        <fieldset>
+          <legend></legend>
+          <input type="radio" id="dome_pack" name="dome" value="package">
+          <label for="dome_pack">
+            <i class="fa fa-check" aria-hidden="true"></i>패키지
+          </label>
+          <input type="radio" id="dome_free" name="dome" value="free">
+          <label for="dome_free">
+            <i class="fa fa-check" aria-hidden="true"></i>자유
+          </label>
+        </fieldset>
+      </form>
+      <div class="selectBox">
+        <ul>
+          <li>오설록에서 놀자!</li>
+          <li>홍도&amp;흑산도 패키지3일</li>
+          <li>홍도&amp;흑산도 패키지2일</li>
+          <li>제주 해비치3일</li>
+          <li>울릉도 대아리조트에서 휴식!</li>
+          <li>제주 석조특가4일</li>
+          <li>전망좋은 제주 칼호텔4일</li>
+          <li>제주호텔에서 힐링하자!</li>
+          <li>우리나라 우리독도</li>
+          <li>울릉도에서 힐링</li>
+        </ul>
+        <div class="more">
+          <a href="#">&#43; 더보기</a>
+        </div>
+      </div>
+    </section>
+    <section class="view_box" id="temaBox">
+      <h2><span class="hidden">테마여행</span></h2>
+      <div class="selectBox">
+        <ul>
+          <li><a href="./tema_honeymoon.html">&#45; 허니문</a></li>
+          <li><a href="./tema_golf.html">&#45; 골프</a></li>
+          <li><a href="./tema_clubmed.html">&#45; 클럽메드</a></li>
+          <li><a href="#">&#45; 크루즈/선박</a></li>
+          <li><a href="#">&#45; 출장</a></li>
+          <li><a href="#">&#45; 계절</a></li>
+          <li><a href="#">&#45; 트레킹</a></li>
+          <li><a href="#">&#45; 베낭</a></li>
+          <li><a href="#">&#45; 기차/버스</a></li>
+          <li><a href="#">&#45; 섬</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="view_box" id="serviceBox">
+      <h2><span class="hidden">service</span></h2>
+      <div class="selectBox">
+        <ul>
+          <li><a href="#">&#45; visa신청</a></li>
+          <li><a href="#">&#45; 보험</a></li>
+          <li><a href="#">&#45; 데이터usim</a></li>
+          <li><a href="#">&#45; 포켓와이파이</a></li>
+          <li><a href="#">&#45; 렌터카</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="view_box" id="eventBox">
+      <h2><span class="hidden">event</span></h2>
+      <div class="eventBtn">
+        <a href="#"><span class="hidden">버튼 클릭 시, 이벤트 페이지로 이동합니다.</span>특별한 이벤트<br />보러가기 &gt;&gt;</a>
+      </div>
+      <address class="copyright">Copyright&copy;2000 Onlinetour.Co.,Ltd. All rights reserved.</address>
+    </section>
+  </div>
+  <script src="../js/src/big_menu.js"></script>
+  <script src="../js/src/main_scrollwheel.js"></script>
+  <script src="../js/src/main_wheelevent.js"></script>
+  <!--main_scrollwheel/main_wheelevent 함께 사용.-->
+  <!-- <script src="../js/src/main_indicator.js"></script> -->
+</body>
+</html>
