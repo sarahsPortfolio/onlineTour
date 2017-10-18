@@ -1,0 +1,1076 @@
+/* main.scss (onlineTour) */
+#wrap {
+  width: 100%;
+  height: 100%;
+  min-width: 60rem; }
+
+#headBox {
+  width: 100%;
+  height: 8.125rem;
+  min-width: 60rem;
+  position: fixed;
+  z-index: 1000;
+  padding: 1.875rem 3.125rem 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+  #headBox > h1 {
+    width: 23.75rem;
+    height: 4.375rem;
+    float: left;
+    background-image: url("../img/logo_re.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    #headBox > h1 > a {
+      width: inherit;
+      height: inherit;
+      display: block; }
+  #headBox > .unb {
+    width: 30rem;
+    height: 2.5rem;
+    float: right;
+    margin-top: 1.875rem; }
+    #headBox > .unb > .sign {
+      width: 17.5rem;
+      height: 2.5rem;
+      float: left; }
+      #headBox > .unb > .sign > ul {
+        width: 100%;
+        height: 100%;
+        margin-right: 2rem; }
+        #headBox > .unb > .sign > ul > li {
+          width: 5.625rem;
+          height: 100%;
+          margin-right: 0.4rem;
+          float: left;
+          text-align: center;
+          line-height: 3.4375rem; }
+          #headBox > .unb > .sign > ul > li:first-child {
+            width: 5rem; }
+          #headBox > .unb > .sign > ul > li:last-child {
+            margin-right: 0; }
+          #headBox > .unb > .sign > ul > li > a {
+            width: 100%;
+            height: 100%; }
+    #headBox > .unb > .sns {
+      width: 11.875rem;
+      height: 2.5rem;
+      float: right; }
+      #headBox > .unb > .sns > ul {
+        width: 100%;
+        height: 100%; }
+        #headBox > .unb > .sns > ul > li {
+          width: 2.5rem;
+          height: 2.5rem;
+          margin-right: 0.4rem;
+          float: left;
+          text-align: center;
+          font-size: 2rem;
+          padding-top: 0.3125rem;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          box-sizing: border-box; }
+          #headBox > .unb > .sns > ul > li:last-child {
+            margin-right: 0; }
+  #headBox > .gnb {
+    width: 0;
+    height: 0; }
+    #headBox > .gnb > .menu_btn {
+      width: 2.375rem;
+      height: 4.5625rem;
+      background-image: url("../img/main/menu_btn.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      position: fixed;
+      top: 50%;
+      margin-top: -2.28125rem;
+      left: 0;
+      z-index: 700;
+      cursor: pointer; }
+    #headBox > .gnb > .big_menu {
+      width: 25.625rem;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: all 300ms;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 600;
+      transform: translateX(-25.625rem);
+      color: #fff;
+      padding: 2.5rem 1.25rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+      #headBox > .gnb > .big_menu.open {
+        transform: translateX(0); }
+      #headBox > .gnb > .big_menu > .btn {
+        width: auto;
+        height: auto;
+        float: right; }
+        #headBox > .gnb > .big_menu > .btn > button {
+          width: 100%;
+          height: 100%;
+          color: #fff;
+          font-size: 2.5rem;
+          margin-bottom: 2.8125rem; }
+      #headBox > .gnb > .big_menu > .big_menu_list {
+        width: 100%;
+        height: auto;
+        float: left; }
+        #headBox > .gnb > .big_menu > .big_menu_list > li {
+          width: 23.125rem;
+          height: 4.375rem;
+          line-height: 4.375rem;
+          font-size: 3rem;
+          margin-bottom: 2.8125rem;
+          text-align: center; }
+    #headBox > .gnb > .indigator {
+      width: 1.25rem;
+      height: 16.25rem;
+      position: fixed;
+      right: 1.875rem;
+      top: 50%;
+      margin-top: -8.125rem;
+      z-index: 600; }
+      #headBox > .gnb > .indigator > li {
+        width: 1.25rem;
+        height: 1.25rem;
+        margin-bottom: 1.25rem;
+        border-radius: 0.625rem;
+        overflow: hidden; }
+        #headBox > .gnb > .indigator > li:last-child {
+          margin-bottom: 0; }
+        #headBox > .gnb > .indigator > li.active > a {
+          background-color: #043782; }
+        #headBox > .gnb > .indigator > li > a {
+          width: 100%;
+          height: 100%;
+          display: block;
+          background-color: #fff; }
+          #headBox > .gnb > .indigator > li > a:hover {
+            background-color: #043782; }
+
+#airBox {
+  background-image: url("../img/main/air_back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0; }
+  #airBox > h2 {
+    width: 11.25rem;
+    height: 5rem;
+    margin-top: 20.625rem;
+    margin-left: 5rem;
+    float: left;
+    background-image: url("../img/main/title_hanggong.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    margin-bottom: 3.125rem; }
+    #airBox > h2:after {
+      content: "";
+      display: block;
+      border: 0.0625rem solid #043782;
+      margin-top: 7.1875rem;
+      width: 21.25rem; }
+  #airBox > form {
+    width: 16.25rem;
+    height: 1.5625rem;
+    margin-left: 5rem; }
+    #airBox > form > fieldset {
+      width: 100%;
+      height: 100%; }
+      #airBox > form > fieldset > legend {
+        width: 0;
+        height: 0;
+        overflow: hidden; }
+      #airBox > form > fieldset > input {
+        width: 0;
+        height: 0;
+        position: absolute;
+        z-index: -1000;
+        outline: 0; }
+        #airBox > form > fieldset > input:checked + label {
+          color: #043782; }
+          #airBox > form > fieldset > input:checked + label > i {
+            display: inline-block;
+            color: #043782; }
+      #airBox > form > fieldset > label {
+        color: #fff;
+        font-size: 1.2rem; }
+        #airBox > form > fieldset > label:first-of-type {
+          margin-right: 6.25rem; }
+  #airBox > .selectBox {
+    width: 75rem;
+    height: 37.5rem;
+    background-color: rgba(64, 194, 221, 0.8);
+    float: right;
+    margin-top: 4.0625rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem #666;
+    padding: 50px 120px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+    #airBox > .selectBox > form {
+      width: 430px;
+      height: 500px; }
+      #airBox > .selectBox > form > .way {
+        width: 100%;
+        height: 30px;
+        position: relative;
+        margin-left: 50px; }
+        #airBox > .selectBox > form > .way > legend {
+          width: 0;
+          height: 0;
+          overflow: hidden; }
+        #airBox > .selectBox > form > .way > input {
+          width: 0;
+          height: 0;
+          position: absolute;
+          z-index: -1000;
+          outline: 0; }
+          #airBox > .selectBox > form > .way > input:checked + label > i:before {
+            background-color: #333; }
+        #airBox > .selectBox > form > .way > label {
+          position: relative;
+          margin-right: 80px;
+          margin-left: 20px; }
+          #airBox > .selectBox > form > .way > label > i {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: -3px;
+            left: -40px;
+            border: 3px solid #333;
+            border-radius: 10px;
+            padding: 3px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box; }
+            #airBox > .selectBox > form > .way > label > i:before {
+              content: "";
+              display: block;
+              width: 100%;
+              height: 100%;
+              background-color: transparent;
+              border-radius: 10px; }
+      #airBox > .selectBox > form > .area {
+        width: 960px;
+        height: 250px; }
+        #airBox > .selectBox > form > .area > .national {
+          width: 100%;
+          height: 50px;
+          margin-top: 25px; }
+          #airBox > .selectBox > form > .area > .national > select {
+            width: 400px;
+            height: 50px;
+            float: left; }
+          #airBox > .selectBox > form > .area > .national > .arrow {
+            width: 70px;
+            height: 50px;
+            margin: 0 45px;
+            float: left;
+            background-image: url("../img/main/arrow.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 0 0; }
+        #airBox > .selectBox > form > .area > .schedule {
+          width: 100%;
+          height: 50px;
+          margin-top: 25px; }
+          #airBox > .selectBox > form > .area > .schedule > #calendar {
+            width: 100%;
+            height: 50px; }
+        #airBox > .selectBox > form > .area > .airline {
+          width: 100%;
+          height: 50px;
+          margin: 25px 0; }
+          #airBox > .selectBox > form > .area > .airline > #airport {
+            width: 100%;
+            height: 50px; }
+      #airBox > .selectBox > form > .personbtn {
+        width: 960px;
+        height: 220px;
+        margin-top: 10px; }
+        #airBox > .selectBox > form > .personbtn > .person {
+          width: 460px;
+          height: 220px;
+          float: left; }
+          #airBox > .selectBox > form > .personbtn > .person > .adult {
+            width: 100%;
+            height: 50px; }
+            #airBox > .selectBox > form > .personbtn > .person > .adult > button {
+              width: 50px;
+              height: 50px;
+              float: left;
+              background-color: #043782;
+              color: #fff;
+              font-size: 2rem; }
+            #airBox > .selectBox > form > .personbtn > .person > .adult > p {
+              width: 300px;
+              height: 50px;
+              margin: 0 25px;
+              float: left;
+              font-size: 1.4rem;
+              line-height: 50px;
+              text-align: center; }
+          #airBox > .selectBox > form > .personbtn > .person > .children {
+            widows: 100%;
+            height: 50px;
+            margin: 25px 0 25px 0; }
+            #airBox > .selectBox > form > .personbtn > .person > .children > button {
+              width: 50px;
+              height: 50px;
+              float: left;
+              background-color: #043782;
+              color: #fff;
+              font-size: 2rem; }
+            #airBox > .selectBox > form > .personbtn > .person > .children > p {
+              width: 300px;
+              height: 50px;
+              margin: 0 25px;
+              float: left;
+              font-size: 1.4rem;
+              line-height: 50px;
+              text-align: center; }
+          #airBox > .selectBox > form > .personbtn > .person > .baby {
+            widows: 100%;
+            height: 50px; }
+            #airBox > .selectBox > form > .personbtn > .person > .baby > button {
+              width: 50px;
+              height: 50px;
+              float: left;
+              background-color: #043782;
+              color: #fff;
+              font-size: 2rem; }
+            #airBox > .selectBox > form > .personbtn > .person > .baby > p {
+              width: 300px;
+              height: 50px;
+              margin: 0 25px;
+              float: left;
+              font-size: 1.4rem;
+              line-height: 50px;
+              text-align: center; }
+        #airBox > .selectBox > form > .personbtn > button {
+          width: 220px;
+          height: 220px;
+          background-color: #043782;
+          color: #fff;
+          float: right;
+          font-size: 1.6rem; }
+          #airBox > .selectBox > form > .personbtn > button:hover {
+            box-shadow: 0.3rem 0.3rem 0.3rem #777;
+            transition: all 100ms; }
+
+#hotelBox {
+  background-image: url("../img/main/hotel_back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0; }
+  #hotelBox > h2 {
+    width: 11.25rem;
+    height: 5rem;
+    margin-top: 20.625rem;
+    margin-left: 5rem;
+    float: left;
+    background-image: url("../img/main/title_hotel.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    margin-bottom: 3.125rem; }
+    #hotelBox > h2:after {
+      content: "";
+      display: block;
+      border: 0.0625rem solid #043782;
+      margin-top: 7.1875rem;
+      width: 21.25rem; }
+  #hotelBox > form {
+    width: 16.25rem;
+    height: 1.5625rem;
+    margin-left: 5rem; }
+    #hotelBox > form > fieldset {
+      width: 100%;
+      height: 100%; }
+      #hotelBox > form > fieldset > legend {
+        width: 0;
+        height: 0;
+        overflow: hidden; }
+      #hotelBox > form > fieldset > input {
+        width: 0;
+        height: 0;
+        position: absolute;
+        z-index: -1000;
+        outline: 0; }
+        #hotelBox > form > fieldset > input:checked + label {
+          color: #043782; }
+          #hotelBox > form > fieldset > input:checked + label > i {
+            display: inline-block;
+            color: #043782; }
+      #hotelBox > form > fieldset > label {
+        color: #fff;
+        font-size: 1.2rem; }
+        #hotelBox > form > fieldset > label:first-of-type {
+          margin-right: 6.25rem; }
+  #hotelBox > .selectBox {
+    width: 75rem;
+    height: 37.5rem;
+    background-color: rgba(64, 194, 221, 0.8);
+    float: right;
+    margin-top: 4.0625rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem #666;
+    padding: 90px 120px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+    #hotelBox > .selectBox > form {
+      width: 100%;
+      height: 100%; }
+      #hotelBox > .selectBox > form > fieldset {
+        width: 100%;
+        height: 100%; }
+        #hotelBox > .selectBox > form > fieldset > .find_hotel {
+          width: 100%;
+          height: 340px; }
+          #hotelBox > .selectBox > form > fieldset > .find_hotel > select {
+            width: 100%;
+            height: 50px;
+            margin-bottom: 55px;
+            background-color: #fff;
+            float: left; }
+            #hotelBox > .selectBox > form > fieldset > .find_hotel > select.size_1 {
+              width: 450px;
+              float: left; }
+            #hotelBox > .selectBox > form > fieldset > .find_hotel > select.size_2 {
+              width: 450px;
+              margin-right: 0;
+              float: right; }
+        #hotelBox > .selectBox > form > fieldset > button {
+          width: 100%;
+          height: 80px;
+          background-color: #043782;
+          color: #fff;
+          font-size: 1.6rem; }
+
+#overSeasBox {
+  background-image: url("../img/main/overseas_back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0; }
+  #overSeasBox > h2 {
+    width: 21.25rem;
+    height: 5rem;
+    margin-top: 20.625rem;
+    margin-left: 5rem;
+    float: left;
+    background-image: url("../img/main/title_overseas.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    margin-bottom: 3.125rem; }
+    #overSeasBox > h2:after {
+      content: "";
+      display: block;
+      border: 0.0625rem solid #043782;
+      margin-top: 7.1875rem;
+      width: 21.25rem; }
+  #overSeasBox > form {
+    width: 16.25rem;
+    height: 1.5625rem;
+    margin-left: 5rem; }
+    #overSeasBox > form > fieldset {
+      width: 100%;
+      height: 100%; }
+      #overSeasBox > form > fieldset > legend {
+        width: 0;
+        height: 0;
+        overflow: hidden; }
+      #overSeasBox > form > fieldset > input {
+        width: 0;
+        height: 0;
+        position: absolute;
+        z-index: -1000;
+        outline: 0; }
+        #overSeasBox > form > fieldset > input:checked + label {
+          color: #043782; }
+          #overSeasBox > form > fieldset > input:checked + label > i {
+            display: inline-block;
+            color: #043782; }
+      #overSeasBox > form > fieldset > label {
+        color: #fff;
+        font-size: 1.2rem; }
+        #overSeasBox > form > fieldset > label:first-of-type {
+          margin-right: 6.25rem; }
+  #overSeasBox > .selectBox {
+    width: 75rem;
+    height: 37.5rem;
+    background-color: rgba(64, 194, 221, 0.8);
+    float: right;
+    margin-top: 4.0625rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem #666; }
+    #overSeasBox > .selectBox > ul {
+      width: 100%;
+      height: 32.1875rem;
+      padding: 1.875rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+      #overSeasBox > .selectBox > ul > li {
+        width: 13.4375rem;
+        height: 13.4375rem;
+        float: left;
+        color: #fff;
+        border-radius: 13.4375rem;
+        background-color: #fff;
+        line-height: 13.4375rem;
+        text-align: center;
+        margin-right: 1rem; }
+        #overSeasBox > .selectBox > ul > li:nth-of-type(1) {
+          background-image: url("../img/main/overseas_qingdao-shelaton.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: -70px 0;
+          margin-bottom: 1.5625rem; }
+          #overSeasBox > .selectBox > ul > li:nth-of-type(1):hover {
+            background-image: url("../img/travel_Overseas/package/qingdao-shelaton.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -70px 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #overSeasBox > .selectBox > ul > li:nth-of-type(2) {
+          background-image: url("../img/main/overseas_waikiki.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0;
+          margin-bottom: 1.5625rem; }
+          #overSeasBox > .selectBox > ul > li:nth-of-type(2):hover {
+            background-image: url("../img/travel_Overseas/package/waikiki.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #overSeasBox > .selectBox > ul > li:nth-of-type(3) {
+          background-image: url("../img/main/overseas_hollywood.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: -40px 0;
+          margin-bottom: 1.5625rem; }
+          #overSeasBox > .selectBox > ul > li:nth-of-type(3):hover {
+            background-image: url("../img/travel_Overseas/package/hollywood.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -40px 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #overSeasBox > .selectBox > ul > li:nth-of-type(4) {
+          background-image: url("../img/main/overseas_shatporo.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: -70px 0;
+          margin-bottom: 1.5625rem; }
+          #overSeasBox > .selectBox > ul > li:nth-of-type(4):hover {
+            background-image: url("../img/travel_Overseas/package/shatporo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -70px 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #overSeasBox > .selectBox > ul > li:nth-of-type(5) {
+          background-image: url("../img/main/overseas_paradasegarden.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: -30px 0;
+          margin-right: 0;
+          margin-bottom: 1.5625rem; }
+          #overSeasBox > .selectBox > ul > li:nth-of-type(5):hover {
+            background-image: url("../img/travel_Overseas/package/paradasegarden.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -30px 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #overSeasBox > .selectBox > ul > li:nth-of-type(6) {
+          background-image: url("../img/main/overseas_henangarden.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: -40px 0; }
+          #overSeasBox > .selectBox > ul > li:nth-of-type(6):hover {
+            background-image: url("../img/travel_Overseas/package/henangarden.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -40px 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #overSeasBox > .selectBox > ul > li:nth-of-type(7) {
+          background-image: url("../img/main/overseas_macau.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: -90px 0; }
+          #overSeasBox > .selectBox > ul > li:nth-of-type(7):hover {
+            background-image: url("../img/travel_Overseas/package/macau.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -90px 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #overSeasBox > .selectBox > ul > li:nth-of-type(8) {
+          background-image: url("../img/main/overseas_hongkong.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0; }
+          #overSeasBox > .selectBox > ul > li:nth-of-type(8):hover {
+            background-image: url("../img/travel_Overseas/package/hongkong.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #overSeasBox > .selectBox > ul > li:nth-of-type(9) {
+          background-image: url("../img/main/overseas_oceanpark.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0; }
+          #overSeasBox > .selectBox > ul > li:nth-of-type(9):hover {
+            background-image: url("../img/travel_Overseas/package/oceanpark.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #overSeasBox > .selectBox > ul > li:nth-of-type(10) {
+          background-image: url("../img/main/overseas_qingdao.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: -60px 0;
+          margin-right: 0; }
+          #overSeasBox > .selectBox > ul > li:nth-of-type(10):hover {
+            background-image: url("../img/travel_Overseas/package/qingdao.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: -60px 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+    #overSeasBox > .selectBox > .more {
+      width: 15rem;
+      height: 3.75rem;
+      margin-left: 30rem;
+      transition: all 300ms; }
+      #overSeasBox > .selectBox > .more > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        background-color: #043782;
+        text-align: center;
+        line-height: 3.75rem;
+        font-size: 1.3rem; }
+      #overSeasBox > .selectBox > .more:hover {
+        box-shadow: 0.3rem 0.3rem 0.3rem rgba(119, 119, 119, 0.8); }
+
+#domesticBox {
+  background-image: url("../img/main/domestic_back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0; }
+  #domesticBox > h2 {
+    width: 21.25rem;
+    height: 5rem;
+    margin-top: 20.625rem;
+    margin-left: 5rem;
+    float: left;
+    background-image: url("../img/main/title_domestic.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    margin-bottom: 3.125rem; }
+    #domesticBox > h2:after {
+      content: "";
+      display: block;
+      border: 0.0625rem solid #043782;
+      margin-top: 7.1875rem;
+      width: 21.25rem; }
+  #domesticBox > form {
+    width: 16.25rem;
+    height: 1.5625rem;
+    margin-left: 5rem; }
+    #domesticBox > form > fieldset {
+      width: 100%;
+      height: 100%; }
+      #domesticBox > form > fieldset > legend {
+        width: 0;
+        height: 0;
+        overflow: hidden; }
+      #domesticBox > form > fieldset > input {
+        width: 0;
+        height: 0;
+        position: absolute;
+        z-index: -1000;
+        outline: 0; }
+        #domesticBox > form > fieldset > input:checked + label {
+          color: #40c2Dd; }
+          #domesticBox > form > fieldset > input:checked + label > i {
+            display: inline-block;
+            color: #40c2Dd; }
+      #domesticBox > form > fieldset > label {
+        color: #fff;
+        font-size: 1.2rem; }
+        #domesticBox > form > fieldset > label:first-of-type {
+          margin-right: 6.25rem; }
+  #domesticBox > .selectBox {
+    width: 75rem;
+    height: 37.5rem;
+    background-color: rgba(64, 194, 221, 0.8);
+    float: right;
+    margin-top: 4.0625rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem #666; }
+    #domesticBox > .selectBox > ul {
+      width: 100%;
+      height: 32.1875rem;
+      padding: 1.875rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+      #domesticBox > .selectBox > ul > li {
+        width: 13.4375rem;
+        height: 13.4375rem;
+        float: left;
+        color: #fff;
+        border-radius: 13.4375rem;
+        background-color: #fff;
+        line-height: 13.4375rem;
+        text-align: center;
+        margin-right: 1rem; }
+        #domesticBox > .selectBox > ul > li:nth-of-type(1) {
+          background-image: url("../img/main/domestic_osulloc.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0;
+          margin-bottom: 1.5625rem; }
+          #domesticBox > .selectBox > ul > li:nth-of-type(1):hover {
+            background-image: url("../img/travel_korea/package/osulloc.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #domesticBox > .selectBox > ul > li:nth-of-type(2) {
+          background-image: url("../img/main/domestic_hongdo_3day.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0;
+          margin-bottom: 1.5625rem; }
+          #domesticBox > .selectBox > ul > li:nth-of-type(2):hover {
+            background-image: url("../img/travel_korea/package/hongdo_3day.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #domesticBox > .selectBox > ul > li:nth-of-type(3) {
+          background-image: url("../img/main/domestic_hongdo_2day.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0;
+          margin-bottom: 1.5625rem; }
+          #domesticBox > .selectBox > ul > li:nth-of-type(3):hover {
+            background-image: url("../img/travel_korea/package/honddo_2day.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #domesticBox > .selectBox > ul > li:nth-of-type(4) {
+          background-image: url("../img/main/domestic_haebeach.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0;
+          margin-bottom: 1.5625rem; }
+          #domesticBox > .selectBox > ul > li:nth-of-type(4):hover {
+            background-image: url("../img/travel_korea/package/haebeach.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #domesticBox > .selectBox > ul > li:nth-of-type(5) {
+          background-image: url("../img/main/domestic_ulungdo.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0;
+          margin-right: 0;
+          margin-bottom: 1.5625rem; }
+          #domesticBox > .selectBox > ul > li:nth-of-type(5):hover {
+            background-image: url("../img/travel_korea/package/ulungdo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #domesticBox > .selectBox > ul > li:nth-of-type(6) {
+          background-image: url("../img/main/domestic_sukjo.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0; }
+          #domesticBox > .selectBox > ul > li:nth-of-type(6):hover {
+            background-image: url("../img/travel_korea/package/sukjo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #domesticBox > .selectBox > ul > li:nth-of-type(7) {
+          background-image: url("../img/main/domestic_silsok.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0; }
+          #domesticBox > .selectBox > ul > li:nth-of-type(7):hover {
+            background-image: url("../img/travel_korea/package/silsok.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #domesticBox > .selectBox > ul > li:nth-of-type(8) {
+          background-image: url("../img/main/domestic_romantichelling.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0; }
+          #domesticBox > .selectBox > ul > li:nth-of-type(8):hover {
+            background-image: url("../img/travel_korea/package/romantichelling.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #domesticBox > .selectBox > ul > li:nth-of-type(9) {
+          background-image: url("../img/main/domestic_dokdo_2.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0; }
+          #domesticBox > .selectBox > ul > li:nth-of-type(9):hover {
+            background-image: url("../img/travel_korea/package/dokdo_2.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+        #domesticBox > .selectBox > ul > li:nth-of-type(10) {
+          background-image: url("../img/main/domestic_ulngdo.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 0;
+          margin-right: 0; }
+          #domesticBox > .selectBox > ul > li:nth-of-type(10):hover {
+            background-image: url("../img/travel_korea/package/ulngdo.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 0 0;
+            margin-bottom: 1.5625rem;
+            transition: all 300ms ease-out;
+            color: transparent; }
+    #domesticBox > .selectBox > .more {
+      width: 15rem;
+      height: 3.75rem;
+      margin-left: 30rem;
+      transition: all 300ms; }
+      #domesticBox > .selectBox > .more > a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: #fff;
+        background-color: #043782;
+        text-align: center;
+        line-height: 3.75rem;
+        font-size: 1.3rem; }
+      #domesticBox > .selectBox > .more:hover {
+        box-shadow: 0.3rem 0.3rem 0.3rem rgba(119, 119, 119, 0.8); }
+
+#temaBox {
+  background-image: url("../img/main/tema_back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0; }
+  #temaBox > h2 {
+    width: 21.25rem;
+    height: 5rem;
+    margin-top: 20.625rem;
+    margin-left: 5rem;
+    float: left;
+    background-image: url("../img/main/title_tema.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0; }
+  #temaBox > .selectBox {
+    width: 75rem;
+    height: 37.5rem;
+    background-color: rgba(4, 55, 130, 0.9);
+    float: right;
+    margin-top: 4.0625rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem #666; }
+    #temaBox > .selectBox > ul {
+      width: 100%;
+      height: 100%;
+      padding: 3.6875rem 13.125rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+      #temaBox > .selectBox > ul > li {
+        width: 50%;
+        height: 3.125rem;
+        margin-bottom: 3.625rem;
+        color: #fff;
+        line-height: 3.125rem;
+        font-size: 3rem;
+        float: left; }
+        #temaBox > .selectBox > ul > li:nth-child(5n) {
+          margin-bottom: 0; }
+        #temaBox > .selectBox > ul > li:nth-child(2n) {
+          padding-left: 1.25rem;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          box-sizing: border-box; }
+
+#serviceBox {
+  background-image: url("../img/main/service_back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0; }
+  #serviceBox > h2 {
+    width: 18.125rem;
+    height: 5rem;
+    margin-top: 20.625rem;
+    margin-left: 5rem;
+    float: left;
+    background-image: url("../img/main/title_service.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0; }
+  #serviceBox > .selectBox {
+    width: 75rem;
+    height: 37.5rem;
+    background-color: rgba(4, 55, 130, 0.9);
+    float: right;
+    margin-top: 4.0625rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem #666; }
+    #serviceBox > .selectBox > ul {
+      width: 100%;
+      height: 100%;
+      padding: 3.6875rem 26.25rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+      #serviceBox > .selectBox > ul > li {
+        width: 20rem;
+        height: 3.125rem;
+        color: #fff;
+        text-align: center;
+        font-size: 3rem;
+        line-height: 3.125rem;
+        margin-bottom: 3.625rem; }
+        #serviceBox > .selectBox > ul > li:last-child {
+          margin-bottom: 0; }
+
+#eventBox {
+  background-image: url("../img/main/event_back.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+  #eventBox > h2 {
+    width: 14.375rem;
+    height: 5rem;
+    margin-top: 20.625rem;
+    margin-left: 5rem;
+    float: left;
+    background-image: url("../img/main/title_event.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0; }
+  #eventBox > .eventBtn {
+    width: 25rem;
+    height: 9.375rem;
+    background-color: rgba(4, 55, 130, 0.9);
+    margin-right: 6.25rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem #666;
+    float: right;
+    margin-top: 20.625rem;
+    border-radius: 0.7rem; }
+    #eventBox > .eventBtn > a {
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      font-size: 2rem;
+      display: block;
+      line-height: 3.125rem;
+      text-align: center;
+      padding-top: 1.5625rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+  #eventBox > .copyright {
+    width: 31.25rem;
+    height: 1.875rem;
+    float: left;
+    text-align: center;
+    margin-left: 40.625rem;
+    position: absolute;
+    bottom: 0; }
+
+.view_box {
+  width: 100%;
+  height: 100%;
+  padding: 8.125rem 4.375rem 0 4.375rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.active > a {
+  background-color: #043782; }

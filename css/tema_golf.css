@@ -1,0 +1,388 @@
+#wrap {
+  width: 100%;
+  height: auto;
+  position: relative; }
+
+#headBox {
+  width: 100%;
+  height: 130px;
+  min-width: 60rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  z-index: 1000;
+  padding: 1.875rem 3.125rem 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+  #headBox > h1 {
+    width: 23.75rem;
+    height: 4.375rem;
+    float: left;
+    background-image: url("../img/logo_re.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    #headBox > h1 > a {
+      width: inherit;
+      height: inherit;
+      display: block; }
+  #headBox > .unb {
+    width: 30rem;
+    height: 2.5rem;
+    float: right;
+    margin-top: 1.875rem; }
+    #headBox > .unb > .sign {
+      width: 17.5rem;
+      height: 2.5rem;
+      float: left; }
+      #headBox > .unb > .sign > ul {
+        width: 100%;
+        height: 100%;
+        margin-right: 2rem; }
+        #headBox > .unb > .sign > ul > li {
+          width: 5.625rem;
+          height: 100%;
+          margin-right: 0.4rem;
+          float: left;
+          text-align: center;
+          line-height: 3.4375rem; }
+          #headBox > .unb > .sign > ul > li:first-child {
+            width: 5rem; }
+          #headBox > .unb > .sign > ul > li:last-child {
+            margin-right: 0; }
+          #headBox > .unb > .sign > ul > li > a {
+            width: 100%;
+            height: 100%; }
+    #headBox > .unb > .sns {
+      width: 11.875rem;
+      height: 2.5rem;
+      float: right; }
+      #headBox > .unb > .sns > ul {
+        width: 100%;
+        height: 100%; }
+        #headBox > .unb > .sns > ul > li {
+          width: 2.5rem;
+          height: 2.5rem;
+          margin-right: 0.4rem;
+          float: left;
+          text-align: center;
+          font-size: 2rem;
+          padding-top: 0.3125rem;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          box-sizing: border-box; }
+          #headBox > .unb > .sns > ul > li:last-child {
+            margin-right: 0; }
+  #headBox > .gnb {
+    width: 0;
+    height: 0; }
+    #headBox > .gnb > .menu_btn {
+      width: 2.375rem;
+      height: 4.5625rem;
+      background-image: url("../img/main/menu_btn.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      position: fixed;
+      top: 50%;
+      margin-top: -2.28125rem;
+      left: 0;
+      z-index: 700;
+      cursor: pointer; }
+    #headBox > .gnb > .big_menu {
+      width: 25.625rem;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: all 300ms;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 600;
+      transform: translateX(-25.625rem);
+      color: #fff;
+      padding: 2.5rem 1.25rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+      #headBox > .gnb > .big_menu.open {
+        transform: translateX(0); }
+      #headBox > .gnb > .big_menu > .btn {
+        width: auto;
+        height: auto;
+        float: right; }
+        #headBox > .gnb > .big_menu > .btn > button {
+          width: 100%;
+          height: 100%;
+          color: #fff;
+          font-size: 2.5rem;
+          margin-bottom: 2.8125rem; }
+      #headBox > .gnb > .big_menu > .big_menu_list {
+        width: 100%;
+        height: auto;
+        float: left; }
+        #headBox > .gnb > .big_menu > .big_menu_list > li {
+          width: 23.125rem;
+          height: 4.375rem;
+          line-height: 4.375rem;
+          font-size: 3rem;
+          margin-bottom: 2.8125rem;
+          text-align: center; }
+  #headBox > .small_menu_list {
+    width: 1440px;
+    height: 60px;
+    background-color: rgba(4, 55, 130, 0.8);
+    margin-top: 6.25rem;
+    margin-left: 23.75rem;
+    color: #fff;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+    #headBox > .small_menu_list > li {
+      width: 100px;
+      height: 40px;
+      float: left;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 45px; }
+      #headBox > .small_menu_list > li:last-child {
+        margin-right: 0; }
+      #headBox > .small_menu_list > li > a {
+        width: 100%;
+        height: 100%; }
+
+#travel_info {
+  width: 100%;
+  height: auto; }
+  #travel_info > .bannerBox {
+    width: 100%;
+    height: 800px;
+    overflow: hidden; }
+    #travel_info > .bannerBox > ul {
+      width: 300%;
+      height: 100%; }
+      #travel_info > .bannerBox > ul > li {
+        width: 33.33%;
+        height: 100%;
+        float: left; }
+        #travel_info > .bannerBox > ul > li.golf_qingdao {
+          background-image: url("../img/tema/banner_golf/banner_1.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 -250px; }
+        #travel_info > .bannerBox > ul > li.golf_lowprice {
+          background-image: url("../img/tema/banner_golf/banner_2.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 -150px; }
+        #travel_info > .bannerBox > ul > li.golf_citytour {
+          background-image: url("../img/tema/banner_golf/banner_3.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 0 -70px; }
+        #travel_info > .bannerBox > ul > li > a {
+          width: 100%;
+          height: 100%;
+          display: block; }
+  #travel_info > .honeymoone_list {
+    width: 100%;
+    height: 1560px;
+    padding: 65px 230px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+    #travel_info > .honeymoone_list > a {
+      width: 260px;
+      height: 320px;
+      float: left;
+      margin-right: 35px;
+      margin-bottom: 50px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(1) dt {
+        background-image: url("../img/tema/li_golf/golf_1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(2) dt {
+        background-image: url("../img/tema/li_golf/golf_2.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(3) dt {
+        background-image: url("../img/tema/li_golf/golf_3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(4) dt {
+        background-image: url("../img/tema/li_golf/golf_4.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(5) dt {
+        background-image: url("../img/tema/li_golf/golf_5.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(6) dt {
+        background-image: url("../img/tema/li_golf/golf_6.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(7) dt {
+        background-image: url("../img/tema/li_golf/golf_7.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(8) dt {
+        background-image: url("../img/tema/li_golf/golf_8.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(9) dt {
+        background-image: url("../img/tema/li_golf/golf_9.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(10) dt {
+        background-image: url("../img/tema/li_golf/golf_10.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(11) dt {
+        background-image: url("../img/tema/li_golf/golf_11.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(12) dt {
+        background-image: url("../img/tema/li_golf/golf_12.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(13) dt {
+        background-image: url("../img/tema/li_golf/golf_13.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(14) dt {
+        background-image: url("../img/tema/li_golf/golf_14.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(15) dt {
+        background-image: url("../img/tema/li_golf/golf_15.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(16) dt {
+        background-image: url("../img/tema/li_golf/golf_16.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(17) dt {
+        background-image: url("../img/tema/li_golf/golf_17.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(18) dt {
+        background-image: url("../img/tema/li_golf/golf_18.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(19) dt {
+        background-image: url("../img/tema/li_golf/golf_19.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(20) dt {
+        background-image: url("../img/tema/li_golf/golf_20.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -30px; }
+      #travel_info > .honeymoone_list > a:nth-of-type(5n) {
+        margin-right: 0; }
+      #travel_info > .honeymoone_list > a:nth-of-type(16) {
+        margin-bottom: 0; }
+      #travel_info > .honeymoone_list > a:nth-of-type(17) {
+        margin-bottom: 0; }
+      #travel_info > .honeymoone_list > a:nth-of-type(18) {
+        margin-bottom: 0; }
+      #travel_info > .honeymoone_list > a:nth-of-type(19) {
+        margin-bottom: 0; }
+      #travel_info > .honeymoone_list > a:nth-of-type(20) {
+        margin-bottom: 0; }
+      #travel_info > .honeymoone_list > a > dl {
+        width: 260px;
+        height: 320px; }
+        #travel_info > .honeymoone_list > a > dl > dt {
+          width: 100%;
+          height: 260px;
+          margin-bottom: 10px; }
+        #travel_info > .honeymoone_list > a > dl > dd {
+          width: 100%;
+          height: 50px;
+          text-align: center;
+          line-height: 25px; }
+
+#footBox {
+  width: 100%;
+  height: 155px;
+  background-color: #333;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff; }
+  #footBox > .familybtn {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #fff;
+    padding: 8px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+    #footBox > .familybtn > li {
+      width: 310px;
+      height: 100%;
+      float: left;
+      border-left: 1px solid #fff;
+      line-height: 29px;
+      text-align: center; }
+      #footBox > .familybtn > li:first-child {
+        border-left: none; }
+      #footBox > .familybtn > li > a {
+        width: 100%;
+        height: 100%; }
+  #footBox > .info {
+    width: 920px;
+    height: 110px;
+    float: left;
+    margin-left: 80px; }
+    #footBox > .info > p {
+      width: 100%;
+      height: 70px;
+      margin-top: 20px; }
+  #footBox > .tel {
+    width: 300px;
+    height: 110px;
+    float: right;
+    margin-right: 80px; }
+    #footBox > .tel > dl {
+      width: 100%;
+      height: 100%; }
+      #footBox > .tel > dl > dt {
+        line-height: 50px; }
+      #footBox > .tel > dl > dd {
+        font-size: 2.5rem; }

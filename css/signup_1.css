@@ -1,0 +1,304 @@
+/* main.scss (onlineTour) */
+#wrap {
+  width: 100%;
+  height: 90%;
+  min-width: 60rem; }
+
+#headBox {
+  width: 100%;
+  height: 8.125rem;
+  min-width: 60rem;
+  position: fixed;
+  z-index: 1000;
+  padding: 1.875rem 3.125rem 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+  #headBox > h1 {
+    width: 23.75rem;
+    height: 4.375rem;
+    float: left;
+    background-image: url("../img/logo_re.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+    #headBox > h1 > a {
+      width: inherit;
+      height: inherit;
+      display: block; }
+  #headBox > .unb {
+    width: 30rem;
+    height: 2.5rem;
+    float: right;
+    margin-top: 1.875rem; }
+    #headBox > .unb > .sign {
+      width: 17.5rem;
+      height: 2.5rem;
+      float: left; }
+      #headBox > .unb > .sign > ul {
+        width: 100%;
+        height: 100%;
+        margin-right: 2rem; }
+        #headBox > .unb > .sign > ul > li {
+          width: 5.625rem;
+          height: 100%;
+          margin-right: 0.4rem;
+          float: left;
+          text-align: center;
+          line-height: 3.4375rem; }
+          #headBox > .unb > .sign > ul > li:first-child {
+            width: 5rem; }
+          #headBox > .unb > .sign > ul > li:last-child {
+            margin-right: 0; }
+          #headBox > .unb > .sign > ul > li > a {
+            width: 100%;
+            height: 100%; }
+    #headBox > .unb > .sns {
+      width: 11.875rem;
+      height: 2.5rem;
+      float: right; }
+      #headBox > .unb > .sns > ul {
+        width: 100%;
+        height: 100%; }
+        #headBox > .unb > .sns > ul > li {
+          width: 2.5rem;
+          height: 2.5rem;
+          margin-right: 0.4rem;
+          float: left;
+          text-align: center;
+          font-size: 2rem;
+          padding-top: 0.3125rem;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          box-sizing: border-box; }
+          #headBox > .unb > .sns > ul > li:last-child {
+            margin-right: 0; }
+  #headBox > .gnb {
+    width: 0;
+    height: 0; }
+    #headBox > .gnb > .menu_btn {
+      width: 2.375rem;
+      height: 4.5625rem;
+      background-image: url("../img/main/menu_btn.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+      position: fixed;
+      top: 50%;
+      margin-top: -2.28125rem;
+      left: 0;
+      z-index: 700;
+      cursor: pointer; }
+    #headBox > .gnb > .big_menu {
+      width: 25.625rem;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      transition: all 300ms;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 600;
+      transform: translateX(-25.625rem);
+      color: #fff;
+      padding: 2.5rem 1.25rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+      #headBox > .gnb > .big_menu.open {
+        transform: translateX(0); }
+      #headBox > .gnb > .big_menu > .btn {
+        width: auto;
+        height: auto;
+        float: right; }
+        #headBox > .gnb > .big_menu > .btn > button {
+          width: 100%;
+          height: 100%;
+          color: #fff;
+          font-size: 2.5rem;
+          margin-bottom: 2.8125rem; }
+      #headBox > .gnb > .big_menu > .big_menu_list {
+        width: 100%;
+        height: auto;
+        float: left; }
+        #headBox > .gnb > .big_menu > .big_menu_list > li {
+          width: 23.125rem;
+          height: 4.375rem;
+          line-height: 4.375rem;
+          font-size: 3rem;
+          margin-bottom: 2.8125rem;
+          text-align: center; }
+
+#sign_up {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/signup/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0; }
+  #sign_up > h2 {
+    width: 21.25rem;
+    height: 5rem;
+    margin-top: 20.625rem;
+    margin-left: 5rem;
+    float: left;
+    background-image: url("../img/signup/title.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    margin-bottom: 3.125rem; }
+    #sign_up > h2:after {
+      width: 300px;
+      height: 60px;
+      content: "";
+      display: block;
+      margin-top: 7.1875rem;
+      margin-left: 15px;
+      background-image: url("../img/signup/sequence_1.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 0; }
+  #sign_up > form {
+    width: 75rem;
+    height: 37.5rem;
+    background-color: rgba(64, 194, 221, 0.8);
+    float: right;
+    margin-top: 4.0625rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem #666;
+    padding: 30px 35px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+    #sign_up > form > fieldset {
+      width: 34.0625rem;
+      height: 470px;
+      margin-right: 40px;
+      float: left; }
+      #sign_up > form > fieldset:last-of-type {
+        margin-right: 0; }
+      #sign_up > form > fieldset > legend {
+        width: 110px;
+        height: 30px;
+        font-size: 1.5rem;
+        margin-left: 217px;
+        text-align: center;
+        margin-bottom: 5px; }
+      #sign_up > form > fieldset > .terms {
+        width: 100%;
+        height: 415px;
+        background-color: #fff;
+        padding: 5px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        float: left;
+        margin-bottom: 5px; }
+        #sign_up > form > fieldset > .terms > p {
+          width: 100%;
+          height: 100%;
+          overflow-y: scroll; }
+      #sign_up > form > fieldset > input {
+        width: 0;
+        height: 0;
+        position: absolute;
+        z-index: -1000;
+        outline: 0; }
+        #sign_up > form > fieldset > input:checked + label > i {
+          color: #043782; }
+      #sign_up > form > fieldset > label {
+        margin-right: 80px;
+        margin-left: 20px; }
+        #sign_up > form > fieldset > label > i {
+          width: 20px;
+          height: 20px;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          box-sizing: border-box;
+          color: #fff; }
+    #sign_up > form > button {
+      width: 140px;
+      height: 50px;
+      margin-top: 15px;
+      background-color: #043782;
+      color: #fff;
+      font-size: 1.5rem;
+      float: right; }
+      #sign_up > form > button:hover {
+        box-shadow: 0.3rem 0.3rem 0.3rem #777;
+        transition: all 100ms; }
+
+#footBox {
+  width: 100%;
+  height: 155px;
+  background-color: #333;
+  padding: 0 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #fff; }
+  #footBox > .familybtn {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid #fff;
+    padding: 8px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box; }
+    #footBox > .familybtn > li {
+      width: 310px;
+      height: 100%;
+      float: left;
+      border-left: 1px solid #fff;
+      line-height: 29px;
+      text-align: center; }
+      #footBox > .familybtn > li:first-child {
+        border-left: none; }
+      #footBox > .familybtn > li > a {
+        width: 100%;
+        height: 100%; }
+  #footBox > .info {
+    width: 920px;
+    height: 110px;
+    float: left;
+    margin-left: 80px; }
+    #footBox > .info > p {
+      width: 100%;
+      height: 70px;
+      margin-top: 20px; }
+  #footBox > .tel {
+    width: 300px;
+    height: 110px;
+    float: right;
+    margin-right: 80px; }
+    #footBox > .tel > dl {
+      width: 100%;
+      height: 100%; }
+      #footBox > .tel > dl > dt {
+        line-height: 50px; }
+      #footBox > .tel > dl > dd {
+        font-size: 2.5rem; }
+
+.view_box {
+  width: 100%;
+  height: 100%;
+  padding: 8.125rem 4.375rem 0 4.375rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
